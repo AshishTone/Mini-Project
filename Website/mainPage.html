@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MedBox Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header>
+    <div class="logo">
+      <h1>
+        <a href="index.html" style="font: bold !important;">RemindDose<sub class="sub">(A Medicine Management System)</sub></a>
+      </h1>
+    </div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#how-to-set-reminder">Reminder Guide</a>
+      <a href="LoginForm.html" target="_blank" class="btn">Sign In</a>    
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#how-to-set-reminder">Reminder Guide</a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-8 space-y-6">
+    <!-- Top Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- Today's Medicines -->
+      <div class="bg-white rounded-lg p-4 shadow">
+        <div class="flex justify-between items-center mb-2">
+          <h2 class="font-semibold">Today's Medicines</h2>
+          <span class="text-sm text-blue-500">6 remaining</span>
+        </div>
+        <div class="space-y-2">
+          <div class="bg-gray-100 p-3 rounded flex justify-between">
+            <div>
+              <p class="font-medium">Amoxicillin</p>
+              <p class="text-sm text-gray-500">500mg - After Breakfast</p>
+            </div>
+          </div>
+          <div class="bg-gray-100 p-3 rounded flex justify-between">
+            <div>
+              <p class="font-medium">Lisinopril</p>
+              <p class="text-sm text-gray-500">10mg - Before Dinner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expiring Soon -->
+      <div class="bg-white rounded-lg p-4 shadow">
+        <div class="flex justify-between items-center mb-2">
+          <h2 class="font-semibold">Expiring Soon</h2>
+          <span class="text-sm text-orange-500">3 medicines</span>
+        </div>
+        <div class="bg-orange-50 p-3 rounded">
+          <p class="font-medium text-orange-700">⚠ Vitamin D3</p>
+          <p class="text-sm text-gray-600">Expires in 5 days</p>
+        </div>
+      </div>
+
+      <!-- Upcoming Refills -->
+      <div class="bg-white rounded-lg p-4 shadow">
+        <div class="flex justify-between items-center mb-2">
+          <h2 class="font-semibold">Upcoming Refills</h2>
+          <span class="text-sm text-blue-400">2 medicines</span>
+        </div>
+        <div class="bg-blue-50 p-3 rounded flex justify-between items-center">
+          <div>
+            <p class="font-medium text-blue-700">Metformin</p>
+            <p class="text-sm text-gray-600">3 days remaining</p>
+          </div>
+          <button class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">Refill</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Medicine Categories -->
+    <div>
+      <h2 class="text-lg font-semibold mb-3">Medicine Categories</h2>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <!-- Category Cards -->
+        <div class="bg-white p-4 rounded shadow">
+          <p class="font-medium text-yellow-500">☀ Morning</p>
+          <p class="text-sm text-gray-500">4 medicines</p>
+          <p class="text-sm text-gray-500">8:00 AM - 10:00 AM</p>
+          <p class="mt-2 text-sm">Aspirin</p>
+          <p class="text-sm">Vitamin C</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <p class="font-medium text-orange-400">🌤 Afternoon</p>
+          <p class="text-sm text-gray-500">2 medicines</p>
+          <p class="text-sm text-gray-500">2:00 PM - 4:00 PM</p>
+          <p class="mt-2 text-sm">Metformin</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <p class="font-medium text-indigo-700">🌙 Evening</p>
+          <p class="text-sm text-gray-500">3 medicines</p>
+          <p class="text-sm text-gray-500">6:00 PM - 8:00 PM</p>
+          <p class="mt-2 text-sm">Lisinopril</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <p class="font-medium text-purple-700">🛌 Bedtime</p>
+          <p class="text-sm text-gray-500">1 medicine</p>
+          <p class="text-sm text-gray-500">9:00 PM - 10:00 PM</p>
+          <p class="mt-2 text-sm">Melatonin</p>
+        </div>
+
+        <!-- Add Category -->
+        <div class="bg-white p-4 rounded shadow flex flex-col justify-between">
+          <div>
+            <p class="text-xl text-blue-400">➕</p>
+            <p class="text-sm text-gray-600 mt-2">Add New Medicine</p>
+            <p class="text-xs text-gray-400">Track a new medication</p>
+          </div>
+          <button class="mt-4 bg-blue-200 text-blue-700 px-3 py-1 rounded w-full">Add Medicine</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Set Reminder Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="bg-white p-4 rounded shadow flex items-center justify-between">
+        <div>
+          <p class="text-blue-400 text-2xl">🔔</p>
+          <p class="text-sm mt-2 font-medium">Set Reminder</p>
+          <p class="text-xs text-gray-500">Create a new reminder schedule</p>
+        </div>
+        <button class="bg-white text-blue-600 border border-blue-300 px-4 py-2 rounded hover:bg-blue-50">Set Reminder</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <h4>RemindDose</h4>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a onclick="openAbout()" style="color:rgb(94, 169, 244) !important; font-size:18px;cursor: pointer;">About</a>
+    </div>
+  </footer>
+  <div id="aboutOverlay" style="
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    backdrop-filter:blur(5px);
+    background-color:rgba(0,0,0,0.3);
+    z-index:1000;
+  ">
+    <div style="
+      background:white;
+      padding:20px 30px;
+      border-radius:10px;
+      width:300px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.3);
+      text-align:center;
+      position:relative;
+    ">
+      <span onclick="closeAbout()" style="
+        position:absolute;
+        top:10px;
+        right:15px;
+        font-size:20px;
+        cursor:pointer;
+      ">&times;</span>
+      <h2 style="font: bolder !important;">About Us</h2>
+      <p>We help users manage their medicines with daily reminders and expiry alerts, making health management simple and stress-free.</p>
+    </div>
+  </div>
+  <script>
+    <!--HamBurger effect sathi-->
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+    function openAbout() {
+      document.getElementById('aboutOverlay').style.display = 'flex';
+    }
+    function closeAbout() {
+      document.getElementById('aboutOverlay').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
