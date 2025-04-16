@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Submissions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto py-6">
+    <h1 class="text-3xl font-bold text-center mb-6">Submitted Profiles</h1>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white border border-gray-300">
+        <thead class="bg-blue-500 text-white">
+          <tr>
+            <th class="px-4 py-2 border">Full Name</th>
+            <th class="px-4 py-2 border">Phone</th>
+            <th class="px-4 py-2 border">Age</th>
+            <th class="px-4 py-2 border">Height</th>
+            <th class="px-4 py-2 border">Gender</th>
+            <th class="px-4 py-2 border">Weight</th>
+            <th class="px-4 py-2 border">Medical Issue</th>
+          </tr>
+        </thead>
+        <tbody id="dataBody"></tbody>
+      </table>
+    </div>
+  </div>
+  <script>
+    const data = JSON.parse(localStorage.getItem('entries') || '[]');
+    const tbody = document.getElementById('dataBody');
+    data.forEach(entry => {
+      const row = document.createElement('tr');
+      row.classList.add('text-center');
+      row.innerHTML = `
+        <td class="border px-4 py-2">${entry.fullName}</td>
+        <td class="border px-4 py-2">${entry.phone}</td>
+        <td class="border px-4 py-2">${entry.age}</td>
+        <td class="border px-4 py-2">${entry.height}</td>
+        <td class="border px-4 py-2">${entry.gender}</td>
+        <td class="border px-4 py-2">${entry.weight}</td>
+        <td class="border px-4 py-2">${entry.issue}</td>
+      `;
+      tbody.appendChild(row);
+    });
+  </script>
+</body>
+</html>
