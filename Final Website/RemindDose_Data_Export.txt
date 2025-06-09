@@ -1,0 +1,143 @@
+=== PROFILE INFORMATION ===
+
+Name: Not provided
+Phone: Not provided
+Age: Not provided
+Gender: Select Gender
+Height: Not provided cm
+Weight: Not provided kg
+Medical Issue: Not provided
+
+=== MEDICINES ===
+
+Name: Paracetamol 
+Category: morning
+Manufacture Date: 2025-06-09
+Expiry Date: 2025-06-15
+Dosage: 1
+Quantity: 4
+
+Name: Amoxicillin 
+Category: bedtime
+Manufacture Date: 2025-06-09
+Expiry Date: 2026-06-09
+Dosage: 1
+Quantity: 10
+
+Name: Cetirizine 
+Category: afternoon
+Manufacture Date: 2025-06-09
+Expiry Date: 2026-06-09
+Dosage: 1
+Quantity: 3
+
+Name: Ranitidine 
+Category: evening
+Manufacture Date: 2025-06-09
+Expiry Date: 2026-06-09
+Dosage: 1
+Quantity: 5
+
+Name: Aspirin
+Category: bedtime
+Manufacture Date: 2025-06-09
+Expiry Date: 2026-06-09
+Dosage: 1
+Quantity: 5
+
+Name: Metformin 
+Category: evening
+Manufacture Date: 2025-06-09
+Expiry Date: 2026-06-09
+Dosage: 1
+Quantity: 5
+
+Name: Glipizide
+Category: morning
+Manufacture Date: 2025-06-09
+Expiry Date: 2026-06-09
+Dosage: 1
+Quantity: 5
+
+Name: Burnol
+Category: afternoon
+Manufacture Date: 2025-06-09
+Expiry Date: 2026-06-09
+Dosage: 1
+Quantity: 5
+
+Name: Fluconazole 
+Category: morning
+Manufacture Date: 2025-06-09
+Expiry Date: 2025-06-10
+Dosage: 1
+Quantity: 5
+
+Name: Calcium supplements
+Category: bedtime
+Manufacture Date: 2025-06-09
+Expiry Date: 2026-06-09
+Dosage: 1
+Quantity: 10
+
+Name: Vitamin C
+Category: morning
+Manufacture Date: 2025-06-09
+Expiry Date: 2026-06-09
+Dosage: 1
+Quantity: 10
+
+Name: Thyronorm
+Category: afternoon
+Manufacture Date: 2025-06-09
+Expiry Date: 2026-06-09
+Dosage: 1
+Quantity: 10
+
+Name: Yentreve
+Category: evening
+Manufacture Date: 2025-06-09
+Expiry Date: 2026-06-09
+Dosage: 1
+Quantity: 10
+
+Name: Omeprazole
+Category: bedtime
+Manufacture Date: 2025-06-09
+Expiry Date: 2026-06-09
+Dosage: 1
+Quantity: 10
+
+Name: Erythromycin
+Category: morning
+Manufacture Date: 2025-06-09
+Expiry Date: 2026-06-09
+Dosage: 1
+Quantity: 2
+
+=== REMINDERS ===
+
+Medicine: Vitamin C
+Dosage: 1 tablet(s)
+Times: 14:10
+Repeat: daily
+Start Date: 2025-06-09
+End Date: 2026-07-09
+Notes: TAKE IT EVERY DAY
+
+Medicine: Metformin 
+Dosage: 1 tablet(s)
+Times: 14:10
+Repeat: daily
+Start Date: 2025-06-09
+End Date: 2026-07-09
+Notes: TAKE IT EVERY DAY
+
+Medicine: Aspirin
+Dosage: 1 tablet(s)
+Times: 14:10, 01:45
+Repeat: daily
+Start Date: 2025-06-09
+End Date: 2025-07-09
+Notes: Painkiller
+
